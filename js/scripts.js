@@ -37,34 +37,45 @@ $(document).ready(function(){
     var stringNumber = inputIntegerNumber.toString();
     var splitArray = (stringNumber).split('');
 
+    var romanOnes = [" ","I","II","III","IV","V", "VI", "VII", "VIII", "IX"]
+    var romanTens = [" ","X","XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
+    var romanHundreds = [" ","C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+    var romanThousands = [" ","M", "MM", "MMM"]
+
 
 
     // console.log(splitArray);
-    for (var i=0; i=splitArray.length; i++){
+    for (var i=0; i<=splitArray.length; i++){
 
       splitArray.pop();
 
 
       // i=1 fills in ones position
-      if (i = 1){
-        var finalRomansOnes =   romanOnes[splitArray[i]];
+      if (i === 1){
+
+      var parsedSplitArray = parsedInt((splitArray[i]).val())
+      console.log(romanOnes, splitArray, parsedSplitArray);
+
+        var finalRomansOnes = romanOnes[parsedSplitArray];
+
+        console.log(finalRomansOnes);
       }
 
 
       // i=2 fills in tens position
-      else if (i = 2){
-        var finalRomansTens =   romanTens[splitArray[i]];
+      else if (i === 2){
+        var finalRomansTens = romanTens[splitArray[i]];
       }
 
 
       // i=3 fills in hundreds  position
-      else if (i = 3) {
-        var finalRomansHundreds =   romanHundreds[splitArray[i]];
+      else if (i === 3) {
+        var finalRomansHundreds = romanHundreds[splitArray[i]];
       }
 
       // i=4 fills in thousands  position
-      else if (i = 4) {
-        var finalRomansThousands =   romanThousands[splitArray[i]];
+      else if (i === 4) {
+        var finalRomansThousands = romanThousands[splitArray[i]];
       }
 
         // } else {
@@ -76,10 +87,7 @@ $(document).ready(function(){
 
 
 
-        var romanOnes = [" ","I","II","III","IV","V", "VI", "VII", "VIII", "IX"]
-        var romanTens = [" ","X","XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
-        var romanHundreds = [" ","C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
-        var romanThousands = [" ","M", "MM", "MMM"]
+
       });
 
     });
