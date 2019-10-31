@@ -6,7 +6,25 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+#### Specs
+
+* The program converts integers into roman numerals.
+  *  Example Input: 1
+  * Example Output: I
+
+* The program does not allow for three or more of the same characters in a row.
+  * Example Input: 4
+  * Example Output: IV (instead of IIII)
+
+* The program separates ones, tens, hundreds, and thousands.
+  * Example Input: 99
+  * Example Output: XCIX
+
+
+* The program does nothing to non-integers.
+ * Example Input: 1.2
+ * Example Output: 1.2
+
 
 ## Setup/Installation Requirements
 
