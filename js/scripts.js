@@ -8,12 +8,8 @@
         // Check to insure number is an integer
 
         var inputIntegerNumber = parseFloat($("#initalInput").val());
-        var numberArray = []
-
-        var loadArray = numberArray.push(inputIntegerNumber);
 
 
-        console.log(numberArray);
 
 
         function isWholeNumber(x) {
@@ -34,6 +30,15 @@
           }
         }
 
+
+        // put number into an array, then split into one, tens, hundreds and thousands positions for conversion
+
+        var stringNumber = inputIntegerNumber.toString();
+        var splitArray = (stringNumber).split('');
+
+
+
+         console.log(splitArray);
 
 
 
