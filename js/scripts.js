@@ -1,5 +1,6 @@
 
 
+
 $(document).ready(function(){
 
   $("form#userInput").submit(function(event) {
@@ -38,28 +39,47 @@ $(document).ready(function(){
 
 
 
-    console.log(splitArray);
+    // console.log(splitArray);
+    for (var i=0; i=splitArray.length; i++){
+
+      splitArray.pop();
 
 
-    for (var i=0; i=splitArray.length; index ++){
-      var allRoman = splitArray.indexOf();
-
-  }
-      var indexVal = splitArray[i-1];
-
+      // i=1 fills in ones position
+      if (i = 1){
+        var finalRomansOnes =   romanOnes[splitArray[i]];
+      }
 
 
-      if (splitArray.length = 1){
+      // i=2 fills in tens position
+      else if (i = 2){
+        var finalRomansTens =   romanTens[splitArray[i]];
+      }
 
-      } else if{}
+
+      // i=3 fills in hundreds  position
+      else if (i = 3) {
+        var finalRomansHundreds =   romanHundreds[splitArray[i]];
+      }
+
+      // i=4 fills in thousands  position
+      else if (i = 4) {
+        var finalRomansThousands =   romanThousands[splitArray[i]];
+      }
+
+        // } else {
+          //   return "Try again";
+          // }
+      console.log(finalRomansOnes);
+        }
 
 
 
 
-    var romanOnes = ["I","II","III","IV","V", "VI", "VII", "VIII", "IX"]
-    var romanTens = ["X","XX", "XXX", "XL", "L", "LX", "LXX", "LXXX" "XC"]
-    var romanHundreds = ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
-    var romanThousands = ["M", "MM", "MMM"]
-  });
+        var romanOnes = [" ","I","II","III","IV","V", "VI", "VII", "VIII", "IX"]
+        var romanTens = [" ","X","XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
+        var romanHundreds = [" ","C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+        var romanThousands = [" ","M", "MM", "MMM"]
+      });
 
-});
+    });
