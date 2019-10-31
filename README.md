@@ -20,6 +20,9 @@
   * Example Input: 99
   * Example Output: XCIX
 
+* The program does nothing to numbers over 3999.
+  * Example Input: 40000
+  * Exmaple Output: 40000
 
 * The program does nothing to non-integers.
  * Example Input: 1.2
