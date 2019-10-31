@@ -1,18 +1,20 @@
-// $(document).ready(function () {
-  //   $("form#userInput").submit(function(event){
-    //     var number = ('input#numberInput').val();
-    //     var parsedNumber = parseInt(number);
-    //
-    //     console.log(number)
+
 
     $(document).ready(function(){
 
       $("form#userInput").submit(function(event) {
         event.preventDefault();
 
+        // Check to insure number is an integer
 
-        var number = parseFloat($("#initalInput").val());
-        console.log(number)
+        var inputIntegerNumber = parseFloat($("#initalInput").val());
+        var numberArray = []
+
+        var loadArray = numberArray.push(inputIntegerNumber);
+
+
+        console.log(numberArray);
+
 
         function isWholeNumber(x) {
           if (Number.isInteger(x)) {
@@ -21,13 +23,20 @@
           return 'Does NOT fit!';
         }
 
-        console.log(isWholeNumber(number));
-        // expected output: "NOT positive"
+
+        // Check to insure number is less than 3999
+
+        function lessThan(a) {
+          if (a > 3999) {
+            return "number too big";
+          } else {
+            return "number good";
+          }
+        }
 
 
 
 
       });
-
 
     });

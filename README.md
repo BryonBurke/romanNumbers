@@ -8,25 +8,30 @@
 
 #### Specs
 
-* The program converts integers into roman numerals.
-  *  Example Input: 1
-  * Example Output: I
-
-* The program does not allow for three or more of the same characters in a row.
-  * Example Input: 4
-  * Example Output: IV (instead of IIII)
-
-* The program separates ones, tens, hundreds, and thousands.
-  * Example Input: 99
-  * Example Output: XCIX
-
 * The program does nothing to numbers over 3999.
   * Example Input: 40000
   * Exmaple Output: 40000
 
 * The program does nothing to non-integers.
- * Example Input: 1.2
- * Example Output: 1.2
+  * Example Input: 1.2
+  * Example Output: 1.2
+
+* The program converts integers into roman numerals.
+  *  Example Input: 1
+  * Example Output: I
+
+* The program separates ones, tens, hundreds, and thousands.
+  * Example Input: 99
+  * Example Output: XCIX
+
+* The program does not allow for three or more of the same characters in a row.
+  * Example Input: 4
+  * Example Output: IV (instead of IIII)
+
+
+
+
+
 
 
 ## Setup/Installation Requirements
